@@ -3,7 +3,8 @@
 
 # How to run on localhost
 ## Using Docker
-```docker-compose up --build```
+``docker-compose up --build``
+`docker-compose down `
 ## Another option
 
 # STILL WAITING FOR APPROVAL TO BE POSTED
