@@ -5,10 +5,10 @@
 
 ## Follow the steps below: <br>
 
-### 1. create and activate virtual env in folder terminal where you are going to clone this repo
+### 1. Create and activate virtual env in folder terminal where you are going to clone this repo
    `python -m venv venv` <br>
    `venv\Scripts\activate` <br>
-### 2. clone repo and install req
+### 2. Clone repo and install req
   `git clone https://github.com/CarlBrendt/AI_Blog_Generator.git` <br>
   `pip install -r AI_Blog_Generator/requirements.txt`
 
