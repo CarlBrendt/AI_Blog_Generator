@@ -6,9 +6,9 @@ services:
     volumes:
       - ./data/db:/var/lib/postgresql/data
     environment:
-      - POSTGRES_DB=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=lelik
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${PASSWORD}
 
   web:
     build: .
@@ -18,10 +18,10 @@ services:
     volumes:
       - ./ai_blog_app:/ai_blog_app
     ports:
-      - "8000:8000"  
+      - "8000:8000"
     environment:
-      - POSTGRES_NAME=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=lelik
+      - POSTGRES_NAME=${DB_NAME}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${PASSWORD}
     depends_on:
       - db
