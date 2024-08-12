@@ -3,9 +3,23 @@
 
 # How to run on localhost <br>
 
-Follow the steps below: <br>
-1. `git clone https://github.com/CarlBrendt/AI_Blog_Generator.git` <br>
+## Follow the steps below: <br>
 
-2. `docker compose --build up` <br>
+### 1. create and activate virtual env in folder terminal where you are going to clone this repo
+   `python -m venv venv` <br>
+   `venv\Scripts\activate` <br>
+### 2. clone repo and install req
+  `git clone https://github.com/CarlBrendt/AI_Blog_Generator.git` <br>
+  `pip install -r AI_Blog_Generator/requirements.txt`
 
-3. in ur web site follow localhost <br>
+### 3. CD to AI_BLog_Generator folder <br>
+  `cd AI_Blog_Generator`
+
+### 4. SET UP .ENV VARIABLES
+In the .env file you need to add all sensetive information like password or openai key. I use postgresql as a database, so you can install pg4admin to create and administer the db. <br>
+
+### 5. Run docker a
+`docker compose --build up` - run <br>
+`docker-compose stop` - stop without deletion
+
+### 6. Run on http://127.0.0.1:8000 or http://localhost:8000 and Enjoy
