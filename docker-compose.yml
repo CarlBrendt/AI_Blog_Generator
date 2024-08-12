@@ -18,7 +18,7 @@ services:
     volumes:
       - ./ai_blog_app:/ai_blog_app
     ports:
-      - "8000:8000"  # Обратите внимание, что порты маппируются как "8000:8000"
+      - "8000:8000"  
     environment:
       - POSTGRES_NAME=postgres
       - POSTGRES_USER=postgres
