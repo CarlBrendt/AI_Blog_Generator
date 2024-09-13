@@ -25,7 +25,7 @@ https://drive.google.com/file/d/1BhxbsPmU4Kb5dDOQoLM3JhAp9Mjr2suq/view?usp=shari
 ### 4. SET UP .ENV VARIABLES
 In the .env file you need to add all sensetive information like password or openai key. I use postgresql as a database, so you can install pg4admin to create and administer the db. <br>
 
-### 5. Run docker a
+### 5. Run docker 
 `docker compose --build up` - run <br>
 `docker-compose stop` - stop without deletion
 
